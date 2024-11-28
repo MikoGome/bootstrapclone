@@ -1,0 +1,459 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(165deg, #f7f5fb 20%, white 20%)
+}
+
+header {
+    background-color: #7952b3;
+    height: 60px;
+}
+
+#logo {
+    /*margin-left: 15vw;*/
+    filter:brightness(100);
+    height: 100%;
+    cursor: pointer;
+}
+
+ul {
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    opacity: 0.8;
+    margin: 0 0.5vw;
+    transition: opacity 0.25s;
+}
+
+li:hover {
+    opacity: 1;
+}
+
+li > a {
+    position: relative;
+    line-height: 60px;
+    bottom: 23px;
+    cursor: pointer;
+}
+
+nav {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-around;
+    height: 100%;
+    line-height: 60px;
+    width: 100%;
+}
+
+#curr {
+  font-weight: bold;
+  opacity: 1;
+}
+
+#download {
+    border: 1px solid yellow;
+    font-weight: 600;
+    background-color: transparent;
+    color: yellow;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: all 0.25s;
+}
+
+#download:hover {
+    color: #7952b3;
+    background-color: yellow;
+}
+
+#download:active {
+    outline: 3px solid rgba(255, 255, 0, 0.25);
+    transition: outline 0.05s;
+}
+
+ul > li img {
+    height: 30%;
+    filter: brightness(100);
+    cursor: pointer;
+}
+
+#slack {
+    height: 30%;
+    filter:invert(1)
+}
+
+ul > li > div > img {
+    color: #7952b3;
+}
+
+button {
+    cursor: pointer;
+}
+
+main > section {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+section a {
+    color:#0d6efd;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.buttons {
+    background-color: white;
+    border: 1px solid #0d6efd;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    color: #0d6efd;
+    transition: all 0.25s;
+}
+
+.buttons:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.buttons:active {
+    outline: 3px solid #0d6dfd85;
+    transition: outline 0.05s;
+}
+
+#front > h1 {
+    color: 212529;
+    font-size: 64px;
+}
+
+#front {
+    color: #495057;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#front h2 {
+    line-height: 36px;
+}
+
+.frontbutton {
+    font-size: 20px;
+    padding: 15px 33px;
+    border-radius: 5px;
+    transition: all 0.25s;
+}
+
+#started {
+    background-color: #7952b3;
+    color: white;
+    border:1px solid #7952b3;
+}
+
+#started:hover {
+    background-color: #553a7e;
+}
+
+#started:active {
+    outline: 3px solid #7952b385;
+    transition: outline 0.05s;
+}
+
+#download2 {
+    background-color: transparent;
+    border:1px solid #6c757d;
+    color: #6c757d;
+}
+
+#download2:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+#download2:active {
+    outline: 3px solid #6c757d85;
+    transition: outline 0.05s;
+}
+
+main {
+    color:#212529;
+}
+
+aside a {
+    color: #495057;
+}
+
+aside a:hover {
+    color: #3e4449;
+}
+
+footer {
+    padding-top: 100px;
+    background-color: #f8f9fa;
+    padding-bottom: 115px;
+}
+
+footer > section {
+    display: flex;
+    justify-content: space-around;
+    width: 1435px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #495057;
+    cursor: pointer;
+}
+
+footer a:hover{
+    color: #0d6dfd;
+    text-decoration: underline;
+}
+
+#footbootstrap {
+    width: 315px;
+}
+
+#footbootstrap > p, #footbootstrap > aside {
+    color: #6c757d;
+}
+
+footer li {
+    margin: 0;
+    display: block;
+}
+
+footer div {
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 42% 58%;
+}
+
+#front > div {
+    padding: 85px 0 45px;
+}
+
+#front > div > h1 {
+    font-size: 64px;
+    color: #212529;
+}
+
+#front button {
+    margin-right: 15px;
+}
+
+#front h2 {
+    font-weight: 100;
+}
+
+.example {
+    background-color: #f8f9fa;
+    height: 80px;
+    font-size: 14px;
+    word-spacing: 4px;
+    letter-spacing: 0.75px;
+}
+
+.example > span {
+    color: #000099;
+}
+
+.rightSide {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rightSide > .example {
+    line-height: 60px;
+    margin: 20px 0;
+    position: relative;
+    padding: 10px;
+}
+
+#installation .rightSide, #jsdelivr .rightSide {
+    padding-top: 110px;
+}
+
+#icons .rightSide img, #themes .rightSide img {
+    text-align: right;
+}
+
+#icons .rightSide img {
+    width: 105%;
+}
+
+#themes .rightSide img {
+    width: 105%;
+}
+
+.example > button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 7px;
+    background-color: white;
+    border: 1px solid #0d6efd;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 7px 9px;
+    color: #0d6efd;
+    transition: all 0.1s;
+}
+
+#jsdelivr .rightside button {
+    background-color: white;
+    border: 1px solid #0d6efd;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 7px 9px;
+    color: #0d6efd;
+    transition: all 0.1s;
+}
+
+.rightSide {
+    position: relative;
+}
+
+#firstCopy {
+    position: absolute;
+    top: 137px;
+    right: 5px;
+    z-index: 1;
+}
+
+#secondCopy {
+    position: absolute;
+    top: 237px;
+    right: 5px;
+    z-index: 1;
+}
+
+.example > button:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+#jsdelivr .rightSide #firstCopy:hover, #jsdelivr .rightSide #secondCopy:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.example > .gray {
+    color: #727272;
+}
+
+#jsdelivr .example {
+    line-height: normal;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 25px;
+}
+
+#icons img {
+    padding: 20px 0px 0px 20px;
+}
+
+.red {
+    color: #d73038;
+}
+
+.blue {
+    color: #2080e4;
+}
+
+.navy {
+    color: #2f6f9f
+}
+
+#footbootstrap img {
+    display: inline;
+    height: 40px;
+    filter:grayscale(1);
+}
+
+#footbootstrap > div {
+    display: inline-block;
+}
+
+#footbootstrap div:hover {
+    color: #0d6efd;
+    cursor: pointer;
+}
+
+#footbootstrap div img:hover {
+    filter: hue-rotate(300deg);
+}
+
+#footbootstrap h4 {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 100;
+    vertical-align: top;
+    margin: 0 4px;
+}
+
+#footbootstrap p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+#footbootstrap aside {
+    font-size: 12px;
+}
+
+footer h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+footer li {
+    display: block;
+    height: 35px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#installation h2, #themes h2, #icons h2, #jsdelivr h2 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+#installation h3, #themes h3, #icons h3, #jsdelivr h3 {
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#installation p, #themes p, #icons p, #jsdelivr p {
+    font-weight: 100;
+    line-height: 24px;
+}
+
+.headingicon > img {
+    height: 60px;
+    margin: 40px 0 15px;
+    background-color: orange;
+}
+
+#icons > div > .headingicon > img {
+    margin: 40px 0 15px;
+    padding: 0;
+}
+
+#front .rightSide img{
+    width: 100%;
+}
